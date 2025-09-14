@@ -1,0 +1,32 @@
+#projects {
+  padding: 4rem 2rem;
+}
+
+#projects h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.project-list {
+  display: flex; /* line up cards horizontall */
+  gap: 2rem; /* space between cards */
+  overflow-x: auto; /* allow horizontal scroll if too wide */
+  padding-bottom: 1rem; /* some space under cards */
+}
+
+.project-card {
+  min-width: 250px; /* ensure each card has a readable size */
+  flex: 0 0 auto; /* Prevent shrinking */
+  background-color: #f5f5f5;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-decoration: none; /* remove underline if using <a> */
+  color: inherit; /* keep text color consistent */
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth hover */
+}
+
+.project-card:hover {
+  transform: translateY(-5px); /* small lift on hover */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}

@@ -1,0 +1,8 @@
+footer {
+  background-color: #222;
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+  /* added this font family from google */
+  font-family: Indie Flower;
+}

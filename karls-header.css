@@ -1,0 +1,52 @@
+header {
+  /*
+  1rem → vertical padding (top & bottom)
+
+  2rem → horizontal padding (left & right)
+  */
+
+  /* a browser usually has a fixed font size such as 16px.  if the user wanted a bigger font size then using rem will make sure everything scales out nicely on the page and the padding adjustes accordingly */
+  padding: 1rem 2rem;
+  background-color: #87cefa; /* this is a dark background color */
+
+  color: white;
+  font-family: Indie Flower;
+
+  /* added by googling */
+  /* https://www.w3schools.com/howto/howto_js_sticky_header.asp */
+  /* make the header stick on the top when scrolling */
+  position: sticky;
+  top: 0;
+}
+
+/*
+target the nav that is inside the header
+make the nav a flex container with display: flex
+*/
+
+header nav {
+  /* note that without the display flex here the links and the logo would just sit on top of each other vertically. the logo on top and the links on the bottom */
+
+  display: flex; /* makes the whole list of links and the logo sit next to each other in a row */
+
+  justify-content: space-between; /* adding this will push the logo to the left and the link to the right */
+
+  align-items: center;
+}
+
+/* remove bullets from the list */
+header nav ul {
+  list-style: none; /* this gets rid of the bullet points */
+  display: flex; /* puts links in a horizontal row */
+  gap: 1.5rem; /* spaces the links apart */
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none; /* removes underline */
+}
+
+/* added this feature to make the links when click go to the desired link in a smooth scroll instead of just jumping to the link */
+html {
+  scroll-behavior: smooth;
+}

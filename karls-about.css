@@ -1,0 +1,49 @@
+/* About Me section */
+#about {
+  padding: 4rem 2rem;
+  background-color: #ffff;
+  text-align: center;
+  /* added this font family from google */
+  font-family: Indie Flower;
+}
+
+/* aBout me heading */
+#about h2 {
+  font-size: 2.5rem; /* slightly smaller than hero headline */
+  margin-bottom: 2.5rem; /* space below heading */
+  color: #222; /* Dark color for readability */
+}
+
+/* About Me paragraph */
+#about p {
+  font-size: 1.2rem; /* Readable size */
+  max-width: 700px; /* Prevents overly long lines. in other words helps with readabliltity instead of seeing a long line of paragraph or sentence. */
+  margin: 0 auto; /* centers the paragraph */
+  line-height: 1.6; /* spacing between lines */
+  color: #555; /* softer color for readability */
+}
+
+/* social media */
+.social-links {
+  margin-top: 2rem;
+}
+
+.social-links a {
+  font-size: 2.5rem; /* make the icons a little more bigger */
+  margin: 0 1rem; /* space between icons */
+  color: lightblue; /* default color */
+  display: inline-block; /* ensures transform works */
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-links a:hover {
+  transform: scale(1.2); /* makes icon pop */
+}
+
+.social-links a:first-child:hover {
+  color: #333; /* GitHub hover color */
+}
+
+.social-links a:last-child:hover {
+  color: #0077b5; /* LinkedIn blue for hover */
+}
