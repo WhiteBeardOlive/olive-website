@@ -1,0 +1,52 @@
+#contact {
+  padding: 4rem 2rem;
+  background-color: #f9f9f9; /* subtle background to seperate section */
+  text-align: center;
+
+  /* added this font family from google */
+  font-family: Indie Flower;
+}
+
+#contact h2 {
+  margin-bottom: 1rem;
+}
+
+#contact p {
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#contact form {
+  display: flex; /* this will put the element all next to each other in a row */
+  flex-direction: column; /* change from row to column */
+  align-items: center;
+  gap: 1rem; /* add spacing between the boxes */
+  max-width: 500px;
+  margin: 0 auto; /* center form horizontally */
+}
+
+#contact input,
+#contact textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+#contact button {
+  padding: 0.75rem 1.5rem; /* Horizontal then Vertical */
+  border: none;
+  border-radius: 6px;
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2 ease, transform 0.2s ease;
+}
+
+#contact button:hover {
+  background-color: #45a049;
+  transform: translateX(-2px);
+}

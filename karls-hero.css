@@ -1,0 +1,55 @@
+/* Viewport
+
+The viewport is basically the visible area of the browser window.
+
+Everything you see on the screen (without scrolling) is inside the viewport. */
+
+/* Hero section container */
+#hero {
+  display: flex; /* Center content with flexbox */
+  flex-direction: column; /* stack items vertically */
+  justify-content: center; /* Center verticaly in viewport*/
+  align-items: center; /* Center horizontally */
+  height: 80vh; /* Take 80% of the viewport height. how much you see on the screen without scrolling */
+  text-align: center; /* Center text inside */
+  padding: 2rem; /* Some space around edges */
+  background-color: #f5f5f5;
+
+  /* added this font family from google */
+  font-family: Indie Flower;
+}
+/* Hero headline */
+#hero h1 {
+  font-size: 3rem; /* scalable with root font size */
+  margin-bottom: 1rem;
+  font-weight: bold;
+  color: #222;
+}
+
+/* Hero description */
+#hero p {
+  font-size: 1.25rem; /* slight bigger than normal text */
+  margin-bottom: 2rem; /**/
+  max-width: 600px; /* keep lines from stretching too wide. this keeps text in a readable column even on wide screens  */
+  color: #555; /* softer gray for better readabiltiy */
+  line-height: 1.6; /* add breathing room between lines */
+}
+
+/* Hero CTA button */
+
+#hero .btn {
+  display: inline-block; /* this make the <a> behave like a button so padding applies correctly */
+  padding: 0.75rem 1.5rem; /* Vertical + Horizontal padding */
+
+  background-color: #222; /* dark background color */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px; /* Rounds corners */
+  font-size: 1rem; /* Normal readable size */
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+/* Button hover effect */
+#hero .btn:hover {
+  background-color: #00aaff; /* changes to blue on hover */
+}

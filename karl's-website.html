@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Karl's Portfolio</title>
+    <!-- rel is relationship in other words what kind of file we are linking. in this case we are linking a css file. href tell the computer where to find the file-->
+
+    <!-- added this to add icons onto my page of linkedin and github -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="karls-header.css" />
+    <link rel="stylesheet" href="karls-hero.css" />
+    <link rel="stylesheet" href="karls-about.css" />
+    <link rel="stylesheet" href="karls-projects.css" />
+    <link rel="stylesheet" href="karls-contact.css" />
+    <link rel="stylesheet" href="karls-footer.css" />
+
+    <!-- added a google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- HEADER SECTION is for the top section of my page -->
+    <header>
+      <!-- nav is the navigation link -->
+      <nav>
+        <!-- logo for is my name and the div is the container -->
+        <div class="logo">Karl Medel</div>
+
+        <!-- ul is unordered list (list of links) -->
+        <ul>
+          <!-- li is each link item -->
+          <!-- <a> is an anchor element that takes to another link within the same webpage -->
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <!-- an 'id' is a one of kind element where we can target it with css to style it. unlike a class which can target mulitple elements -->
+    <section id="hero">
+      <h1>Hello Everyone, I'm Karl</h1>
+      <p>
+        Aspiring software engineer passionate about building projects and
+        learning new technologies.
+      </p>
+
+      <a href="#projects" class="btn">View My Projects</a>
+    </section>
+
+    <!-- About me section -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I enjoy building small projects and challenging myself with creative
+        problems. In my free time I like to trail jog, hike, lift weights, be
+        out in nature, learn new skills that push me forward and play video
+        games every now and then. Currently playing the famous metroidvania
+        Hollow Knight
+      </p>
+
+      <!-- Social Media Links (Icons) -->
+      <!-- transfered from the footer to here. -->
+      <div class="social-links">
+        <a href="https://github.com/WhiteBeardOlive" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/karl-medel-5b0b46211"
+          target="_blank"
+        >
+          <i class="fab fa-linkedin"></i
+        ></a>
+      </div>
+    </section>
+
+    <!-- Projects sections -->
+    <section id="projects">
+      <h2>My Projects</h2>
+      <div class="project-list">
+        <a href="#" class="project-card" target="_blank">
+          <h3>Personal Website</h3>
+          <p>
+            This is the website I am working on now! It showcases who I am and
+            my skills in web development.
+          </p>
+        </a>
+
+        <!-- New Trail Jog project -->
+        <a href="https://your-live-project-link.com" class="project-card" target="_blank">
+          <h3>Trail Jog</h3>
+          <p>
+            A web app that lets you log and track your trail jogs, including times, routes, and personal stats.
+          </p>
+        </a>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p>Feel free to reach out to me! I'd love to hear from you 😊</p>
+
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy;2025 Karl Medel. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
